@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get '/watch/:id', to: 'streams#watch', as: :watch
+  get '/live_streaming', to: 'streams#live_streaming', as: :live_streaming
+
+  root 'streams#live_streaming'
 end
