@@ -8,6 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require('jquery')
+require('packs/tb')
 require("packs/live_stream")
 require("packs/watch")
 
