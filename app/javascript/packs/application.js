@@ -9,8 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require('jquery')
 require('packs/tb')
-require("packs/live_stream")
-require("packs/watch")
+require("packs/meeting")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :stream
+  has_many :meeting_users, dependent: :destroy
+  has_many :meetings, through: :meeting_users
 end
